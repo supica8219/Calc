@@ -1,0 +1,40 @@
+.button-area{
+    background-color:black;
+    width:100vw;
+    height:75vh;
+    display:flex;
+    flex-flow: row wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.button{
+    display:block;
+    margin:0;
+    padding:0;
+    width:25%;
+    height:15vh;
+    border:none;
+    background-color:rgb(43, 43, 43);
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+}
+.b-orange{
+    background-color: orange;
+    color:white;
+}
+.b-blue{
+    background-color: blue;
+    color:white;
+}
+.zero-button{
+    display:block;
+    width:50%;
+    height:15vh;
+    font-size:40px;
+    font-weight:bold;
+    background-color:rgb(230, 230, 230);
+    color:black;
+}

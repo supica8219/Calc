@@ -1,0 +1,38 @@
+/* ローディング画面 */
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity:0.9
+  }
+  .spinner {
+    width: 100px;
+    height: 100px;
+    margin: 200px auto;
+    border-radius: 100%;
+    animation: load 3s infinite ease-in-out;
+    z-index: 9999;
+  }
+  .loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* ローディングアニメーション */
+  @keyframes load {
+    0% {
+      transform: scale(0);
+      background-color: rgb(210, 15, 15);
+    } 
+    10%{
+      opacity:0.2
+    }
+    100% {
+      transform: scale(20.0);
+      background-color: rgb(220, 140, 30);
+      opacity: 0;
+    }
+  }
